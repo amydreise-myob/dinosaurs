@@ -5,14 +5,21 @@
         	body {
         		width: 400%;
         		margin:0;
+				font-family: Helvetica, sans-serif;
         	}
         	.container {
         		width: 100%;
         		overflow: hidden;
         	}
-        	img {
+			.dino {
+				display: inline-block;
         		margin-right: 1%;
+				text-align: center;
         	}
+			span {
+				padding: 10px 0px;
+				display: block;
+			}
         	.size-1 {
         		width: 2%;
         	}
@@ -35,23 +42,52 @@
         		width: 30%;
         		margin:0;
         	}
-        	.flip {
+        	.flip img{
         		transform: scaleX(-1);
         	}
         	.shift-down {
         	  margin-bottom: -4%;
         	}
+			img {
+				width: 100%;
+				height: auto;
+			}
         </style>
     </head>
     <body>
 	    <div class="container">
-		    <img src="images/microraptor.png" class="size-1">
-		    <img src="images/velociraptor.png" class="size-2 flip">
-		    <img src="images/triceratops.png" class="size-3">
-		    <img src="images/stegosaurus.svg" class="size-4 flip">
-		    <img src="images/trex.svg" class="size-5 flip">
-		    <img src="images/brontosaurus.svg" class="size-6 flip shift-down">
-		    <img src="images/supersaurus.png"  class="size-7 flip">
+			<div class="dino size-1">
+		    	<img src="images/microraptor.png">
+				<span>Microraptor</span>
+			</div>
+			<div class="dino size-2 flip">			
+				<img src="images/velociraptor.png">
+				<span>Velociraptor</span>
+				
+			</div>
+			<div class="dino size-3">
+				<img src="images/triceratops.png">
+				<span>Triceratops</span>
+				
+			</div>
+			<div class="dino size-4 flip">
+				<img src="images/stegosaurus.svg">
+				<span>Stegosaurus</span>
+				
+			</div>
+			<div class="dino size-5 flip">
+				<img src="images/trex.svg" class="">
+				<span>Trex</span>
+				
+			</div>
+			<div class="dino size-6 flip shift-down">
+				<img src="images/brontosaurus.svg" class="">
+				<span>Brontosaurus</span>
+			</div>
+			<div class="dino size-7 flip">
+				<img src="images/supersaurus.png"  class="">
+				<span>Supersaurus</span>				
+			</div>
 	    </div>
     </body>
 </html>
